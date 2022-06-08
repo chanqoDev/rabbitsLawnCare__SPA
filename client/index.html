@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rabbits Lawncare</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="”screen”" />
+  </head>
+  <body>
+    <form>
+      <label>First Name :</label>
+      <input type="text" id="fName" />
+      <label>Last Name :</label>
+      <input type="text" id="lName" />
+      <!-- set button onClick method to call function we defined passing input values as parameters -->
+      <button
+        type="button"
+        onclick="callAPI(document.getElementById('fName').value,document.getElementById('lName').value)"
+      >
+        Call API
+      </button>
+    </form>
+  </body>
+</html>
